@@ -1,0 +1,41 @@
+###
+GET http://127.0.0.1:8000/
+Accept: application/json
+
+###
+GET http://127.0.0.1:8000/cat/
+Accept: application/json
+
+###
+GET http://127.0.0.1:8000/ad/
+Accept: application/json
+
+###
+POST http://127.0.0.1:8000/cat/
+Accept: application/json
+Content-Type: application/json
+
+{"name": "Новая категория"}
+
+###
+POST http://127.0.0.1:8000/ad/
+Accept: application/json
+Content-Type: application/json
+
+{
+    "name": "Стол прямой прям НЕхороший",
+    "author": "Борис",
+    "price": 180000,
+    "description": "Продаю столы потому что остались не востребоваными. Лишки компании. Ушли на удаленку. Размеры : 140/70 см. Всего 4-6 шт. Так же есть такого цвета и другая мебель. СМОТРИТЕ В ПРОФИЛЕ МОЕМ.",
+    "address": "Санкт-Петербург, м. Чернышевская",
+    "is_published": true
+  }
+
+
+###
+GET http://127.0.0.1:8000/cat/1
+Accept: application/json
+
+###
+GET http://127.0.0.1:8000/ad/1
+Accept: application/json
